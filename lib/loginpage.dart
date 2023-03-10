@@ -1,4 +1,4 @@
-import 'package:flutter_application_2/mainpage.dart';
+// import 'package:flutter_application_2/mainpage.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -37,10 +37,7 @@ class LoginPage extends StatelessWidget {
               ElevatedButton(
                   child: const Text("LOGIN"),
                   onPressed: () {
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) {
-                      return const MainPage();
-                    }));
+                    Navigator.pushNamed(context, '/dua');
                   }),
             ],
           ),

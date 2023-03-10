@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/secondpage.dart';
-
-final List bulan = [
-  "Januari",
-  "Fabruari",
-  "Maret",
-  "April",
-  "Mei",
-  "Juni",
-  "Juli",
-  "Agustus",
-  "September",
-  "Oktober",
-  "November",
-  "Desember"
-];
+// import 'package:flutter_application_2/secondpage.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -29,9 +14,7 @@ class MainPage extends StatelessWidget {
         child: ElevatedButton(
             child: const Text("Go to Second Page"),
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const SecondPage();
-              }));
+              Navigator.pushNamed(context, '/tiga');
             }),
       ),
       // child: Image.asset('assets/zhakyyy-modified.png'),
